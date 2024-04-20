@@ -287,7 +287,7 @@ function selectAnswer(e) {
   function showResult() {
     quiz.innerHTML = `
       <h1>Quiz Completed!</h1>
-      <p>Your score: ${score}/${quizData.length}</p>`;
+      <p>Your score: ${score}/10</p>`;
       const restartButton = document.createElement("button");
       restartButton.innerText = "Restart Quiz";
       restartButton.addEventListener("click", restartQuiz);
@@ -298,7 +298,7 @@ function selectAnswer(e) {
     otherQuestion += 10
     score = 0;
     quiz.innerHTML = `<h1>Space Quiz</h1>
-    <p> id="question"></p>
+    <div> id="question"></div>
     <div id="options"></div>`;
     showQuestion();
 }
